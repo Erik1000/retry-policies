@@ -1,4 +1,4 @@
-use std::time::{Duration, SystemTime};
+use web_time::{Duration, SystemTime};
 
 use rand::{
     distr::uniform::{UniformFloat, UniformSampler},

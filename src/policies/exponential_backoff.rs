@@ -1,8 +1,6 @@
 use crate::{Jitter, RetryDecision, RetryPolicy};
-use std::{
-    cmp::{self, min},
-    time::{Duration, SystemTime},
-};
+use std::cmp::{self, min};
+use web_time::{Duration, SystemTime};
 
 /// Exponential backoff with optional jitter.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
